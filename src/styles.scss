@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+
+@import 'bootstrap/scss/bootstrap';
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+:root{
+    --theme-black : #3A3A3B;
+    --theme-blue : #7497DC;   
+}
+
+.logo-font{
+    font-family: 'Alegreya Sans SC',sans-serif;
+}
+
+h1,h2{
+    font-family: 'Lexend',sans-serif;
+}
+h3,h4,h5,h6,p{
+    font-family: 'Nunito sans',sans-serif;
+}
+
+.brand-header{
+    font-size: 44px;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    font-weight: 200;
+}
+
+.brand-sub-header{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.brand-description{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+}
+
+
+button, .btn{
+    border-radius: 50px;
+    font-family: 'Lexend';
+    padding: 4px 1em;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.btn-primary{
+    background: var(--theme-blue);
+    color:var(--bs-gray-100);
+    border:var(--theme-blue);
+}
+
+.btn-outline-secondary{
+    color:black;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: var(--theme-blue);
+}

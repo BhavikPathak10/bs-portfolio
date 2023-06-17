@@ -1,0 +1,51 @@
+<div class="row fullWidth">
+    <section class="section-text offset-xl-1 col-xl-6 col-lg-7 col-md-8">
+        <div class="row">
+            <h4 class="logo-font d-flex align-items-center">
+                <img src="../../assets/images/Logo-white.svg" class="logo" alt="logo-bhavik-pathak"/>
+                <span class="firstname">BHAVIK</span> PATHAK
+            </h4>
+            <h6 class="sub-logo-info blink_me blue">Stay Tuned!</h6>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="offset-1 col-sm-10 col-11">
+                    <!-- <section class="about-me-section mt-5 mb-3">
+                        <h5><span class="blue">//</span> Coming Soon,</h5>
+                        <p>This webpage is currently under development and will be updated shortly. Stay tuned!</p>
+                    </section> -->
+
+                    <section class="about-me-section mt-5 mb-3">
+                        <h5><span class="blue">//</span> About Me</h5>
+                        <div class="img-thumbnail d-block d-md-none person-img my-3"></div>
+                        <p>My name is <strong>Bhavik Pathak</strong> and I’m a self-taught passionate <i>designer</i> and professional software <i>developer</i>. </p>
+                    </section>
+
+                    <section class="Service-button-section mt-5 mb-3">
+                        <p>Let me know what can I help you with </p>
+                        <h6> <span class="blue">//</span> Design</h6>
+                        <div class="btn-group-toggle" data-toggle="buttons">
+                            <button class="btn btn-sm me-2 mb-3" [ngClass]="tag.active ? 'btn-primary' : 'btn-outline-secondary'" *ngFor="let tag of designTags" (click)="toggleTag(tag)">
+                             {{ tag.name }}
+                            </button>
+                        </div>
+                        <h6> <span class="blue">//</span> Develop</h6>
+                        <div class="btn-group-toggle" data-toggle="buttons">
+                            <button class="btn btn-sm me-2 mb-3" [ngClass]="tag.active ? 'btn-primary' : 'btn-outline-secondary'" *ngFor="let tag of devTags" (click)="toggleTag(tag)">
+                             {{ tag.name }}
+                            </button>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" [(ngModel)]="briefText" placeholder="Write some brief" aria-label="Write a brief">
+                            <button class="btn btn-primary btn-sm" type="button" (click)="onSendClick()">Send <i class="bi bi-send"></i></button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row update-msg-scroll">
+            <marquee class="marquee" behavior="scroll" direction="left"><i>Coming Soon: This webpage is currently under development and will be updated shortly. Stay tuned!</i></marquee>
+        </div> -->
+    </section>
+    <div class="col-xl-4 col-lg-5 col-md-4 d-md-block d-none person-img"></div>
+</div>
