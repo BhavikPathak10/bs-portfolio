@@ -27,7 +27,8 @@
     background: url('../../assets/images/BhavikPathak.jpg');
     filter: brightness(0.9) grayscale(1) opacity(0.85);
     height: 100vh;
-    background-position: center;
+    background-position: top;
+    background-repeat: no-repeat;
     &.img-thumbnail{
         background-size: cover;
         height: 40vh;
